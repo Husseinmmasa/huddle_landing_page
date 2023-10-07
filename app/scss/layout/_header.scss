@@ -1,0 +1,52 @@
+@use '../utils'  as *;
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: rem(23);
+    padding-right: rem(23);
+    padding-top: rem(23);
+    padding-bottom: rem(113.6);
+
+    @media (min-width: rem(600)) {
+        padding: rem(75) rem(63) rem(230) rem(80);
+    }
+
+    &__logo {
+        width: rem(100);
+        height: rem(16);
+
+        @media (min-width: rem(600)) {
+            width: rem(242);
+            height: rem(40);
+        }
+    }
+
+    &__button {
+        width: rem(85);
+        height: rem(24.8);
+        padding: rem(4) rem(16) rem(5) rem(16);
+        font-size: rem(10);
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 400;
+        color: var(--color-pink);
+        background-color: white;
+        border: rem(1) solid var(--color-pink);
+        border-radius: rem(20);
+
+        @media (min-width: rem(600)) {
+            width: rem(140);
+            height: rem(40);
+            padding: rem(10) rem(30) rem(10) rem(30);
+            font-size: rem(16);
+            border-radius: rem(25);
+        }
+    }
+
+    &__button:hover {
+        color: var(--light-pink);
+        border-color: var(--light-pink);
+        cursor: pointer;
+    }
+}

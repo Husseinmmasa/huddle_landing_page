@@ -1,0 +1,18 @@
+@use '../utils' as *;
+
+.image {
+    display: flex;
+    justify-content: center;
+
+    &__img_screens {
+        margin-top: rem(102);
+        width: 80%;
+
+        @media (min-width: rem(600)) {
+            margin-top: rem(107);
+            width: 70%;
+        }
+    }
+}
+
+
