@@ -26,6 +26,14 @@ body {
   color: var(--dark-cyan);
 }
 
+@font-face {
+  font-family: "Poppins";
+  src: url("/fonts/Poppins-Bold.ttf");
+}
+@font-face {
+  font-family: "Open Sans";
+  src: url("/fonts/OpenSans-VariableFont_wdth,wght.ttf");
+}
 h1, h2, h3 {
   margin-top: 0;
   font-family: "Poppins", sans-serif;
@@ -40,14 +48,6 @@ a, a:visited, a:active {
   text-decoration: none;
 }
 
-@font-face {
-  font-family: "Poppins";
-  src: url("fonts/Poppins-Bold.ttf");
-}
-@font-face {
-  font-family: "Open Sans";
-  src: url("fonts/OpenSans-VariableFont_wdth,wght.ttf");
-}
 .header {
   display: flex;
   justify-content: space-between;
@@ -315,6 +315,89 @@ a, a:visited, a:active {
 .button:hover {
   background-color: var(--light-pink);
   cursor: pointer;
+}
+
+.curve-1 {
+  min-height: 7rem;
+  width: 100%;
+  background-image: url("/images/bg-section-top-mobile-1.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+@media (min-width: 37.5rem) {
+  .curve-1 {
+    height: 10.3125rem;
+    background-image: url("/images/bg-section-top-desktop-1.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom;
+  }
+}
+
+.curve-2 {
+  min-height: 3.25rem;
+  width: 100%;
+  background-image: url("/images/bg-section-bottom-mobile-1.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+@media (min-width: 37.5rem) {
+  .curve-2 {
+    height: 8.6875rem;
+    background-image: url("/images/bg-section-bottom-desktop-1.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+}
+
+.curve-3 {
+  min-height: 6.4375rem;
+  width: 100%;
+  background-image: url("/images/bg-section-top-mobile-2.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+@media (min-width: 37.5rem) {
+  .curve-3 {
+    height: 9.75rem;
+    background-image: url("/images/bg-section-top-desktop-2.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom;
+  }
+}
+
+.curve-4 {
+  min-height: 6.3125rem;
+  width: 100%;
+  background-image: url("/images/bg-section-bottom-mobile-2.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+@media (min-width: 37.5rem) {
+  .curve-4 {
+    height: 8.6875rem;
+    background-image: url("/images/bg-section-bottom-desktop-2.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+}
+
+.curve-5 {
+  min-height: 3.3125rem;
+  width: 100%;
+  background-image: url("/images/bg-footer-top-mobile.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+@media (min-width: 9.875rem) {
+  .curve-5 {
+    height: 10.3125rem;
+    background-image: url("/images/bg-footer-top-desktop.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom;
+  }
 }
 
 .top_article {
@@ -667,88 +750,5 @@ a, a:visited, a:active {
   .image__img_screens {
     margin-top: 6.6875rem;
     width: 70%;
-  }
-}
-
-.curve-1 {
-  min-height: 7rem;
-  width: 100%;
-  background-image: url("images/bg-section-top-mobile-1.svg");
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-@media (min-width: 37.5rem) {
-  .curve-1 {
-    height: 10.3125rem;
-    background-image: url("images/bg-section-top-desktop-1.svg");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: bottom;
-  }
-}
-
-.curve-2 {
-  min-height: 3.25rem;
-  width: 100%;
-  background-image: url("images/bg-section-bottom-mobile-1.svg");
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-@media (min-width: 37.5rem) {
-  .curve-2 {
-    height: 8.6875rem;
-    background-image: url("images/bg-section-bottom-desktop-1.svg");
-    background-size: contain;
-    background-repeat: no-repeat;
-  }
-}
-
-.curve-3 {
-  min-height: 6.4375rem;
-  width: 100%;
-  background-image: url("images/bg-section-top-mobile-2.svg");
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-@media (min-width: 37.5rem) {
-  .curve-3 {
-    height: 9.75rem;
-    background-image: url("images/bg-section-top-desktop-2.svg");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: bottom;
-  }
-}
-
-.curve-4 {
-  min-height: 6.3125rem;
-  width: 100%;
-  background-image: url("images/bg-section-bottom-mobile-2.svg");
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-@media (min-width: 37.5rem) {
-  .curve-4 {
-    height: 8.6875rem;
-    background-image: url("images/bg-section-bottom-desktop-2.svg");
-    background-size: contain;
-    background-repeat: no-repeat;
-  }
-}
-
-.curve-5 {
-  min-height: 3.3125rem;
-  width: 100%;
-  background-image: url("images/bg-footer-top-mobile.svg");
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-@media (min-width: 9.875rem) {
-  .curve-5 {
-    height: 10.3125rem;
-    background-image: url("images/bg-footer-top-desktop.svg");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: bottom;
   }
 }/*# sourceMappingURL=styles.css.map */
